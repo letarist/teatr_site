@@ -1,0 +1,7 @@
+{% extends 'mainapp/include/inc_base.html' %}
+{% load static %}
+{% block content %}
+    {% for w in work %}
+        <p class="proizved"><a href="{% url 'main:post_detail' w.pk %}">{{w.title}}</a></p>
+    {% endfor %}
+{% endblock %}

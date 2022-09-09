@@ -1,0 +1,18 @@
+{% extends 'mainapp/include/inc_base.html' %}
+{% load static %}
+{% block content %}
+<div class="card">
+    <li>{{repertoire.title}}</li>
+    <li>{{repertoire.year}}</li>
+    <br>
+    <li>{% for actor in repertoire.artist.all %}
+        {{ actor.name }}
+        {{ actor.middlename }}
+        {{ actor.surname }}
+        <br>
+        {% endfor %}
+    </li>
+    <br>
+    <li>{{repertoire.description}}</li>
+</div>
+{% endblock %}

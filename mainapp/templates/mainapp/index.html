@@ -1,0 +1,18 @@
+{% extends 'mainapp/include/inc_base.html' %}
+{% load static %}
+{% block content %}
+<h1 class="titleclass">Hello world</h1>
+<a href="{% url 'main:contacts' %}">Cсылка</a>
+<div>
+    <img src="{% static 'Безымянный.png' %}" class="imgclass">
+</div>
+{% for artist in artists %}
+    <img src="{{media_url}}{{artist.avatar}}">
+    <p>{{ artist.name }}</p>
+    <p>{{ artist.middlename }}</p>
+    <p>{{ artist.surname }}</p>
+    <p>{{ artist.age }}</p>
+    <p>{{ artist.repertoire.title }}</p>
+{% endfor %}
+{% endblock content %}
+

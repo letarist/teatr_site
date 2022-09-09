@@ -1,0 +1,33 @@
+{% load static %}
+{% block head %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    {% endblock css %}
+    {% block js %}
+
+    {% endblock js %}
+</head>
+{% endblock head %}
+
+{% block menu %}
+    {% include 'mainapp/include/inc_menu.html' %}
+{% endblock menu %}
+
+<body>
+<div class="container">
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <div class="footer">
+        {% block footer %}
+        <a href="/">Footer</a>
+        <p class="date">{{ time }}</p>
+        {% endblock footer %}
+    </div>
+</div>
+</body>

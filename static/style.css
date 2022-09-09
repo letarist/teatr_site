@@ -1,0 +1,21 @@
+.titleclass{
+    color:red;
+}
+.imgclass{
+    width:500px;
+    height:500px;
+}
+.active{
+    color:green;
+}
+.proizved{
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+}
+.artist{
+    list-style:none;
+}
+.card{
+    list-style:none;
+}

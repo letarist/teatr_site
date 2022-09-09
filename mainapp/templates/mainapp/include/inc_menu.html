@@ -1,0 +1,7 @@
+<div class="menu">
+    <a href="{% url 'mainapp:main' %}" class="{% if request.resolver_match.url_name == 'main' %}active{% endif %}">Главная</a>
+    {% for link in links %}
+    <a href="{% url 'mainapp:genre' link.pk %}"
+       class="{% if request.resolver_match.url_name == 'link.pk' %}active{% endif %}">{{link.title}}</a>
+    {% endfor %}
+</div>
