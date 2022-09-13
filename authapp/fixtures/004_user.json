@@ -1,0 +1,18 @@
+[
+    {
+        "model": "authapp.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$Poyfal2RNsKa$AAnI/z9WprCunEwku4YKvIU9lJAVNsQ//rH2K9Qy2YY=",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "root@ya.ru",
+            "is_staff": true,
+            "is_active": true,
+            "avatar": "",
+            "age": 33
+        }
+    }
+]

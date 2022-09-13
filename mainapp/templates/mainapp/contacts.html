@@ -2,10 +2,9 @@
 {% load static %}
 {% block content %}
 
-<form>
-    <input type="text" placeholder="Введите ваше имя">
-    <input type="text" placeholder="Введите почту">
-    <p><input type="submit" value="Отправить"></p>
-</form>
+{% for contact in contacts %}
+    {{contact.phone}}
+    {{contact.email}}
+{% endfor %}
 
 {% endblock content %}

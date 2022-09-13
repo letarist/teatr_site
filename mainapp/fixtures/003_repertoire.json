@@ -1,0 +1,35 @@
+[
+  {
+    "model": "mainapp.repertoire",
+    "pk": 1,
+    "fields": {
+      "title": "Чайка",
+      "genre": [1],
+      "year": 2019,
+      "description": "Style, beautiful",
+      "artist": [1]
+    }
+  },
+  {
+    "model": "mainapp.repertoire",
+    "pk": 2,
+    "fields": {
+      "title": "Село Степанчиково и его обитатели",
+      "genre": [2],
+      "year": 2022,
+      "description": "Fun",
+      "artist": [1,2]
+    }
+  },
+  {
+    "model": "mainapp.repertoire",
+    "pk": 3,
+    "fields": {
+      "title": "Последняя жертва",
+      "genre": [3],
+      "year": 2022,
+      "description": "i'm horror",
+      "artist": [2]
+    }
+  }
+]

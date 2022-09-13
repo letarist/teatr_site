@@ -1,0 +1,30 @@
+[
+  {
+    "model": "mainapp.artist",
+    "pk": 1,
+    "fields": {
+      "name": "Дмитрий",
+      "middle_name": "Сергеевич",
+      "surname": "Пивоваров",
+      "age": 29,
+      "gender": "ML",
+      "profession": "Artist",
+      "bio": "from Arzamas",
+      "avatar": "avatars/pon.png"
+    }
+  },
+  {
+    "model": "mainapp.artist",
+    "pk": 2,
+    "fields": {
+      "name": "Елизавета",
+      "middle_name": "Алексеевна",
+      "surname": "Заторская",
+      "age": 25,
+      "gender": "FM",
+      "profession": "Actiss",
+      "bio": "From Vyksa",
+      "avatar": "avatars/Безымянный.png"
+    }
+  }
+]

@@ -48,3 +48,17 @@ class Repertoire(models.Model):
     class Meta:
         verbose_name = "Репертуар"
         verbose_name_plural = "Репертуар"
+
+
+class Contact(models.Model):
+    phone = models.IntegerField(verbose_name='Номер телефона', null=True, blank=True)
+    email = models.EmailField(verbose_name='почта')
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
+
+    def __str__(self):
+        return self.email
+
+

@@ -1,0 +1,34 @@
+[
+  {
+    "model": "mainapp.genre",
+    "pk": 1,
+    "fields": {
+      "title": "drama",
+      "desc": "Sad("
+    }
+  },
+  {
+    "model": "mainapp.genre",
+    "pk": 2,
+    "fields": {
+      "title": "comedy",
+      "desc": "fun"
+    }
+  },
+  {
+    "model": "mainapp.genre",
+    "pk": 3,
+    "fields": {
+      "title": "triller",
+      "desc": "напряженно"
+    }
+  },
+    {
+    "model": "mainapp.genre",
+    "pk": 4,
+    "fields": {
+    "title": "horror",
+    "desc": "страшно"
+    }
+  }
+]
