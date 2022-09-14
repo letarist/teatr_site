@@ -1,0 +1,10 @@
+[
+  {
+    "model": "mainapp.contact",
+    "pk": 1,
+    "fields": {
+      "phone": 1234,
+      "email": "mail@mail.ru"
+    }
+  }
+]

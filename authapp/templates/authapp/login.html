@@ -6,4 +6,8 @@
     {{login_form.as_p}}
     <input class="form-control" type="submit" value="Войти">
 </form>
+<li>
+    <a href="{% url 'authapp:register' %}">Зарегистрироваться</a>
+</li>
+
 {% endblock content %}

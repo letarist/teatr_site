@@ -1,0 +1,12 @@
+{% extends 'authapp/include/inc_base.html' %}
+{% load static %}
+{% block content %}
+{% if user.avatar %}
+<img src="{{media_url}}{{user.avatar}}" class="avatar">
+{% endif %}
+<form class="form-horizontal" action="{% url 'authapp:profile' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{edit_form.as_p}}
+    <input type="submit" value="Сохранить">
+</form>
+{% endblock content %}
